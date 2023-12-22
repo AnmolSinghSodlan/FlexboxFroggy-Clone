@@ -65,8 +65,8 @@ for (let i = 0; i < btnLevel.length; i++) {
   }
   if (i + 1 === 1) {
     btnLevel[i].addEventListener("click", function () {
-    window.open("index.html", "_self");
-  });
+      window.open("index.html", "_self");
+    });
   }
 }
 
