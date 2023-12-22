@@ -96,10 +96,6 @@ document.addEventListener("click", function (event) {
   }
 });
 
-modalLevels.addEventListener("click", function (event) {
-  event.stopPropagation();
-});
-
 for (let i = 0; i < modalCode.length; i++) {
   modalCode[i].addEventListener("click", function (event) {
     modalHelp.style.display = "none";
