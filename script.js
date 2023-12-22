@@ -54,19 +54,20 @@ for (let i = 0; i < pad.length; i++) {
 /*************************************************************************************************************/
 
 for (let i = 0; i < btnLevel.length; i++) {
-  btnLevel[i].addEventListener("click", function () {
-    window.open(`index${i + 1}.html`, "_self");
-  });
+  if (i + 1 === 1) {
+    btnLevel[i].addEventListener("click", function () {
+      window.open("index.html", "_self");
+    });
+  } else {
+    btnLevel[i].addEventListener("click", function () {
+      window.open(`index${i + 1}.html`, "_self");
+    });
+  }
   if (localStorage.getItem(i + 1) !== null) {
     btnLevel[i].classList.add("solved");
   }
   if (i + 1 === pageNumber) {
     btnLevel[i].classList.add("current");
-  }
-  if (i + 1 === 1) {
-    btnLevel[i].addEventListener("click", function () {
-      window.open("index.html", "_self");
-    });
   }
 }
 
