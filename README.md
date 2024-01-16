@@ -2,7 +2,7 @@
 
 ## Live Link
 
-https://anmolsinghsodlan.github.io/FlexboxFroggy-Clone/
+https://flexbox-froggy-clone.vercel.app/
 
 ## Overview
 
