@@ -141,7 +141,7 @@ input.value = JSON.parse(localStorage.getItem(pageNumber));
 btnNext.addEventListener("click", function () {
   if (green && yellow && red && pageNumber !== 24) {
     codebox.classList.remove("codebox-animation");
-    window.open(`index${pageNumber + 1}.html`, "_self");
+    window.open(`/pages/quiz${pageNumber + 1}.html`, "_self");
   } else if (green && yellow && red && pageNumber === 24) {
     codebox.classList.remove("codebox-animation");
     window.open("victory.html", "_self");
