@@ -15,7 +15,7 @@ Welcome to the FlexBox Froggy Clone, a web-based game designed to help users mas
 - Real-time feedback on user solutions.
 - Progressive level system for skill advancement.
 
-## Getting Started
+## Tech Stack
 
 1. HTML
 2. CSS
