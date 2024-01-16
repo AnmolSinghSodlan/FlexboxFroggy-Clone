@@ -26,3 +26,7 @@ Welcome to the FlexBox Froggy Clone, a web-based game designed to help users mas
 flexboxfroggy.com
 
 I am a student and I created this website as an assignment project for my coaching class by taking inspiration from FLEXBOX FROGGY website. I do not own the contents on this website. I have attached the links to the original website and its publisher's various social media handles above. Do check them out.
+
+## Contributing
+
+Feel free to contribute to the project by opening issues, suggesting improvements, or submitting pull requests. Your feedback and contributions are highly appreciated.
