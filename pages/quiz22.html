@@ -12,7 +12,11 @@
     <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
     <style>
       .pads {
-        justify-content: flex-end;
+        flex-wrap: wrap;
+        align-content: flex-end;
+      }
+      .pond {
+        flex-wrap: wrap;
       }
     </style>
   </head>
@@ -20,11 +24,11 @@
     <header class="header">
       <h1 class="logo">FLEXBOX FROGGY</h1>
       <div class="counter">
-        <span class="counter-left hover-class disable">
+        <span class="counter-left hover-class">
           <span class="counter-left-arrow"></span>
         </span>
         <span class="counter-centre hover-class">
-          <span class="counter-centre-plate">Level 1 of 24</span>
+          <span class="counter-centre-plate">Level 22 of 24</span>
           <span class="counter-centre-arrow">
             <span class="counter-down-arrow"></span>
           </span>
@@ -67,52 +71,26 @@
       <section class="left">
         <div class="instructions">
           <p class="text">
-            Welcome to Flexbox Froggy, a game where you help Froggy and friends
-            by writing CSS code! Guide this frog to the lilypad on the right by
-            using the
+            Now the current has bunched the lilypads at the bottom. Use
             <code
               class="coding-instructions modal-code hover-class"
               style="border-bottom: 1px solid rgba(255, 255, 255, 0.8)"
-              >justify-content</code
+              >align-content</code
             >
-            property, which aligns items horizontally and accepts the following
-            values:
+            to guide the frogs there.
           </p>
-          <ul>
-            <li>
-              <code class="coding-instructions">flex-start</code>: Items align
-              to the left side of the container.
-            </li>
-            <li>
-              <code class="coding-instructions">flex-end</code>: Items align to
-              the right side of the container.
-            </li>
-            <li>
-              <code class="coding-instructions">center</code>: Items align at
-              the center of the container.
-            </li>
-            <li>
-              <code class="coding-instructions">space-between</code>: Items
-              display with equal spacing between them.
-            </li>
-            <li>
-              <code class="coding-instructions">space-around</code>: Items
-              display with equal spacing around them.
-            </li>
-          </ul>
-          <p class="text">
-            For example,
-            <code class="coding-instructions">justify-content: flex-end;</code>
-            will move the frog to the right.
-          </p>
-          <div class="modal-help modal-help-justify-content">
-            <p class="text">Aligns flex items along the main axis. <br /></p>
-            <code class="coding-instructions">flex-start (default)</code>
+          <div class="modal-help modal-help-align-content">
+            <p class="text">
+              Aligns a flex container's lines within the flex container when
+              there is extra space on the cross-axis. <br />
+            </p>
+            <code class="coding-instructions">flex-start</code>
             <code class="coding-instructions">flex-end</code>
             <code class="coding-instructions">center</code>
             <code class="coding-instructions">space-between</code>
             <code class="coding-instructions">space-around</code>
             <code class="coding-instructions">space-evenly</code>
+            <code class="coding-instructions">stretch (default)</code>
           </div>
         </div>
         <div class="codebox">
@@ -141,8 +119,10 @@
             <pre class="written-code">
 #pond {
   display: flex;
+  flex-wrap: wrap;
   <textarea class="input-code" rows="1"></textarea>
 }
+
             </pre>
           </div>
           <button class="btn-next hover-class disable">Next</button>
@@ -177,8 +157,92 @@
             <div class="frog-container green-frog">
               <div class="frog frog-animation"></div>
             </div>
+            <div class="frog-container green-frog">
+              <div class="frog frog-animation"></div>
+            </div>
+            <div class="frog-container green-frog">
+              <div class="frog frog-animation"></div>
+            </div>
+            <div class="frog-container green-frog">
+              <div class="frog frog-animation"></div>
+            </div>
+            <div class="frog-container green-frog">
+              <div class="frog frog-animation"></div>
+            </div>
+            <div class="frog-container green-frog">
+              <div class="frog frog-animation"></div>
+            </div>
+            <div class="frog-container green-frog">
+              <div class="frog frog-animation"></div>
+            </div>
+            <div class="frog-container green-frog">
+              <div class="frog frog-animation"></div>
+            </div>
+            <div class="frog-container green-frog">
+              <div class="frog frog-animation"></div>
+            </div>
+            <div class="frog-container green-frog">
+              <div class="frog frog-animation"></div>
+            </div>
+            <div class="frog-container green-frog">
+              <div class="frog frog-animation"></div>
+            </div>
+            <div class="frog-container green-frog">
+              <div class="frog frog-animation"></div>
+            </div>
+            <div class="frog-container green-frog">
+              <div class="frog frog-animation"></div>
+            </div>
+            <div class="frog-container green-frog">
+              <div class="frog frog-animation"></div>
+            </div>
+            <div class="frog-container green-frog">
+              <div class="frog frog-animation"></div>
+            </div>
           </div>
           <div class="pads">
+            <div class="pad-container green-pad">
+              <div class="pad"></div>
+            </div>
+            <div class="pad-container green-pad">
+              <div class="pad"></div>
+            </div>
+            <div class="pad-container green-pad">
+              <div class="pad"></div>
+            </div>
+            <div class="pad-container green-pad">
+              <div class="pad"></div>
+            </div>
+            <div class="pad-container green-pad">
+              <div class="pad"></div>
+            </div>
+            <div class="pad-container green-pad">
+              <div class="pad"></div>
+            </div>
+            <div class="pad-container green-pad">
+              <div class="pad"></div>
+            </div>
+            <div class="pad-container green-pad">
+              <div class="pad"></div>
+            </div>
+            <div class="pad-container green-pad">
+              <div class="pad"></div>
+            </div>
+            <div class="pad-container green-pad">
+              <div class="pad"></div>
+            </div>
+            <div class="pad-container green-pad">
+              <div class="pad"></div>
+            </div>
+            <div class="pad-container green-pad">
+              <div class="pad"></div>
+            </div>
+            <div class="pad-container green-pad">
+              <div class="pad"></div>
+            </div>
+            <div class="pad-container green-pad">
+              <div class="pad"></div>
+            </div>
             <div class="pad-container green-pad">
               <div class="pad"></div>
             </div>
@@ -187,7 +251,7 @@
       </section>
     </main>
     <script>
-      const pageNumber = 1;
+      const pageNumber = 22;
       const greenPresent = true;
       const yellowPresent = false;
       const redPresent = false;

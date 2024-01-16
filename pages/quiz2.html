@@ -9,43 +9,10 @@
       type="image/x-icon"
       href="https://flexboxfroggy.com/favicon.ico"
     />
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
     <style>
-      .green .frog {
-        background-image: url(https://flexboxfroggy.com/images/frog-green.svg);
-        background-size: 60% 60%;
-        background-position: center;
-        background-repeat: no-repeat;
-        width: 100%;
-        height: 100%;
-      }
-
-      .yellow .frog {
-        background-image: url(https://flexboxfroggy.com/images/frog-yellow.svg);
-        background-size: 60% 60%;
-        background-position: center;
-        background-repeat: no-repeat;
-        width: 100%;
-        height: 100%;
-      }
-      .green .pad {
-        background-image: url(https://flexboxfroggy.com/images/lilypad-green.svg);
-        background-size: 90% 90%;
-        background-position: center;
-        background-repeat: no-repeat;
-        width: 100%;
-        height: 100%;
-        transform: /*scale()*/ rotate(-120deg);
-      }
-
-      .yellow .pad {
-        background-image: url(https://flexboxfroggy.com/images/lilypad-yellow.svg);
-        background-size: 90% 90%;
-        background-position: center;
-        background-repeat: no-repeat;
-        width: 100%;
-        height: 100%;
-        transform: /*scale()*/ rotate(-45deg);
+      .pads {
+        justify-content: center;
       }
     </style>
   </head>
@@ -53,7 +20,7 @@
     <header class="header">
       <h1 class="logo">FLEXBOX FROGGY</h1>
       <div class="counter">
-        <span class="counter-left hover-class" onclick="moveLeft()">
+        <span class="counter-left hover-class">
           <span class="counter-left-arrow"></span>
         </span>
         <span class="counter-centre hover-class">
@@ -62,9 +29,38 @@
             <span class="counter-down-arrow"></span>
           </span>
         </span>
-        <span class="counter-right hover-class" onclick="moveRight()">
+        <span class="counter-right hover-class">
           <span class="counter-right-arrow"></span>
         </span>
+      </div>
+      <div class="modal-levels">
+        <div class="levels">
+          <span class="level">1</span>
+          <span class="level">2</span>
+          <span class="level">3</span>
+          <span class="level">4</span>
+          <span class="level">5</span>
+          <span class="level">6</span>
+          <span class="level">7</span>
+          <span class="level">8</span>
+          <span class="level">9</span>
+          <span class="level">10</span>
+          <span class="level">11</span>
+          <span class="level">12</span>
+          <span class="level">13</span>
+          <span class="level">14</span>
+          <span class="level">15</span>
+          <span class="level">16</span>
+          <span class="level">17</span>
+          <span class="level">18</span>
+          <span class="level">19</span>
+          <span class="level">20</span>
+          <span class="level">21</span>
+          <span class="level">22</span>
+          <span class="level">23</span>
+          <span class="level">24</span>
+          <div class="reset">Reset</div>
+        </div>
       </div>
     </header>
     <main>
@@ -73,7 +69,7 @@
           <p class="text">
             Use
             <code
-              class="coding-instructions hover-class"
+              class="coding-instructions modal-code hover-class"
               style="border-bottom: 1px solid rgba(255, 255, 255, 0.8)"
               >justify-content</code
             >
@@ -103,6 +99,15 @@
               display with equal spacing around them.
             </li>
           </ul>
+          <div class="modal-help modal-help-justify-content">
+            <p class="text">Aligns flex items along the main axis. <br /></p>
+            <code class="coding-instructions">flex-start (default)</code>
+            <code class="coding-instructions">flex-end</code>
+            <code class="coding-instructions">center</code>
+            <code class="coding-instructions">space-between</code>
+            <code class="coding-instructions">space-around</code>
+            <code class="coding-instructions">space-evenly</code>
+          </div>
         </div>
         <div class="codebox">
           <div class="numbers">
@@ -154,26 +159,27 @@
             Hey there, my name is Anmol Singh Sodlan. I am a student and I
             created this website as an assignment project for my coaching class
             by taking inspiration from FLEXBOX FROGGY website. I do not own the
-            contents on this website. I have attached the links to the website
-            and its various social media handles above. Do check them out.
+            contents on this website. I have attached the links to the original
+            website and its publisher's various social media handles above. Do
+            check them out.
           </div>
         </footer>
       </section>
       <section class="right">
         <div class="board">
           <div class="pond">
-            <div class="frog-container green">
+            <div class="frog-container green-frog">
               <div class="frog frog-animation"></div>
             </div>
-            <div class="frog-container yellow">
+            <div class="frog-container yellow-frog">
               <div class="frog frog-animation"></div>
             </div>
           </div>
           <div class="pads">
-            <div class="pad-container green">
+            <div class="pad-container green-pad">
               <div class="pad"></div>
             </div>
-            <div class="pad-container yellow">
+            <div class="pad-container yellow-pad">
               <div class="pad"></div>
             </div>
           </div>
@@ -181,13 +187,12 @@
       </section>
     </main>
     <script>
-      function moveRight() {
-        window.open("index3.html", "_self");
-      }
-      function moveLeft() {
-        window.open("index.html", "_self");
-      }
+      const pageNumber = 2;
+      const greenPresent = true;
+      const yellowPresent = true;
+      const redPresent = false;
+      const order = false;
     </script>
-    <script src="script.js"></script>
+    <script src="/assets/js/script.js"></script>
   </body>
 </html>
